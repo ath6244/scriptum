@@ -1,0 +1,16 @@
+method,condition,n_seeds,acc,acc_ci_low,acc_ci_high,macro_f1,macro_f1_ci_low,macro_f1_ci_high
+Majority,output_only,1,0.2003,0.1829,0.2183,0.0667,0.0619,0.0717
+Majority,input_only,1,0.2003,0.1829,0.2183,0.0667,0.0619,0.0717
+Majority,input_output,1,0.2003,0.1829,0.2183,0.0667,0.0619,0.0717
+Length-only LR,output_only,1,0.4136,0.3873,0.4391,0.399,0.3727,0.4235
+Length-only LR,input_only,1,0.2065,0.1887,0.2244,0.157,0.1413,0.1728
+Length-only LR,input_output,1,0.3916,0.3669,0.417,0.3725,0.3469,0.3975
+TF-IDF + LR,output_only,1,0.863,0.844,0.8816,0.8624,0.8432,0.8809
+TF-IDF + LR,input_only,1,0.2189,0.2011,0.2377,0.2129,0.1954,0.2308
+TF-IDF + LR,input_output,1,0.8513,0.8321,0.8708,0.8505,0.8312,0.8696
+TextCNN,output_only,3,0.7963,0.7776,0.8146,0.796,0.7771,0.8139
+TextCNN,input_only,3,0.1966,0.1835,0.2102,0.163,0.1522,0.1738
+TextCNN,input_output,3,0.8084,0.7877,0.8277,0.8075,0.7869,0.8268
+BiLSTM,output_only,3,0.7564,0.7359,0.7757,0.7566,0.7363,0.776
+BiLSTM,input_only,3,0.2056,0.192,0.2206,0.1834,0.1708,0.1962
+BiLSTM,input_output,3,0.7495,0.7297,0.7684,0.7496,0.7296,0.7684

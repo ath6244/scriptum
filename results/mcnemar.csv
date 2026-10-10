@@ -1,0 +1,5 @@
+a,b,acc_a,acc_b,only_a_right,only_b_right,p_value,significant_0.05
+TF-IDF + LR / output_only,TextCNN / output_only,0.863042,0.792154,162,59,0.0,True
+TextCNN / output_only,BiLSTM / output_only,0.792154,0.754301,166,111,0.001138,True
+TextCNN / input_output,TextCNN / output_only,0.80936,0.792154,88,63,0.050448,False
+BiLSTM / input_output,BiLSTM / output_only,0.742602,0.754301,84,101,0.239378,False

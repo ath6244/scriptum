@@ -1,0 +1,12 @@
+norm_id,splits,n_rows
+259fe86f8857,"test,train,val",10
+20e265b4c043,"train,val",8
+954287fafcbc,"train,val",8
+3d53291bcdb3,"train,val",4
+5aad648a1cec,"test,train",4
+6adfb183a4a2,"train,val",4
+6312a57f3a21,"train,val",4
+6de4365988c9,"test,val",4
+f52f58684d65,"test,val",4
+f5e6620cd1b7,"test,train",4
+f978a9bae5aa,"train,val",4
