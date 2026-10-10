@@ -1,0 +1,12 @@
+column,detector,rows_flagged,share
+LLM_Input,email,0,0.0
+LLM_Input,email_real,0,0.0
+LLM_Input,phone,0,0.0
+LLM_Input,url,167,0.0173
+LLM_Input,personal_url,10,0.001
+LLM_output,email,65,0.0067
+LLM_output,email_real,24,0.0025
+LLM_output,phone,13,0.0013
+LLM_output,url,770,0.0797
+LLM_output,personal_url,44,0.0046
+either,any,906,0.0937
