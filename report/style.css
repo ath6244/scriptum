@@ -29,3 +29,9 @@ figure { margin: 0.8em 0; text-align: center; break-inside: avoid; }
 figure img, p img { max-width: 100%; max-height: 7.2in; }
 figcaption { font-size: 9pt; color: var(--muted); margin-top: 0.3em; }
 blockquote { border-left: 3px solid #e34948; margin: 0.8em 0; padding: 0.4em 0.9em; background: #fdf2f2; }
+
+/* Team block under the title (same pattern as the README) */
+.team { text-align: center; margin: -0.6em 0 1.6em; }
+.team p { margin: 0.25em 0; }
+.team ul { display: inline-block; text-align: left; margin: 0.2em 0 0.4em; padding-left: 1.2em; }
+.team li { margin: 0.1em 0; }

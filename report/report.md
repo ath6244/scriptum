@@ -1,9 +1,20 @@
 ---
 title: "Who Wrote It? Identifying LLMs from Their Responses"
-subtitle: "CMPSC 448 Midterm Project"
-author: "Atharva Herwade Patil (team leader), Anuroop Saini"
-date: "October 10, 2026"
+author-meta: "Atharva Herwade Patil; Anuroop Saini"
 ---
+
+<div class="team">
+
+**CMPSC 448 midterm project.**
+
+**Team Members:**
+
+- Atharva Herwade Patil (Team Leader) - (abh6244)
+- Anuroop Saini - (abs7800)
+
+October 2026
+
+</div>
 
 <!--
 Every number in this report comes from a file under results/ (or splits.json); a comment after each
@@ -684,6 +695,51 @@ of the earlier OpenRouter pipeline (prompts.csv, responses.jsonl), not part of t
 0.69% results/near_duplicates.csv; 86.3 / 79.6 / 75.6 results/comparison_ci.csv; McNemar results/mcnemar.csv;
 6.8k results/split_counts.csv; 1,453 and 99 test rows results/split_counts.csv; 31.7% results/rq4_ablations.csv;
 "about a third" results/rq4_features.csv (share_with_emoji 0.36) -->
+
+# 6 Food for Thought: one answer from outside the dataset
+
+After the experiments, we gave the final model two answers that are not in the dataset. The model is TF-IDF +
+LR on masked outputs (output only), rebuilt from its saved settings. We checked that it reproduces the
+reported 86.3% test accuracy exactly, so it is the same model as in Section 3.
+
+| Reply (words) | True source | gemini | openai | llama | claude | qwen | Prediction |
+|---|---|---|---|---|---|---|---|
+| Stack vs queue, for a CS freshman (383) | not known | **57.8** | 25.6 | 9.7 | 6.4 | 0.5 | gemini |
+| Why hydrogen is used as rocket fuel (639) | ChatGPT (openai) | **35.5** | 28.7 | 21.3 | 11.5 | 2.9 | gemini ✗ |
+
+*Table 8. Predicted probability per family (%). Both replies were pasted as plain text.*
+
+<!-- source: results/food_for_thought.csv; replies in data/external_replies/ -->
+
+**The ChatGPT answer was attributed to gemini.** The code ran correctly; this is the kind of error the test
+results predict, made more likely by four measurable differences from the training data.
+
+1. **The model was uncertain, not confidently wrong.** gemini led by only 6.8 points, and the true family
+   came second. Even in-distribution, the model recognizes openai outputs only 79.5% of the time (233 of 293).
+2. **The text no longer looks like the openai outputs the model learned from.** The reply has no headers,
+   bold or emoji, against 10.0, 26.0 and 4.7 per 1,000 words for openai in training. Its sentence length
+   (12.3 words) matches gemini (12.3) rather than openai (10.0), and its length (639 words) is close to
+   gemini's median (682), not openai's (367). Only 25 of the 1,933 openai outputs in our data are at least
+   500 words long with no headers, bold or emoji. The most likely cause is that the answer's markdown was
+   lost when it was copied as plain text, and formatting is part of the fingerprint (Section 4.2).
+3. **The model has little evidence on this topic.** Only 31 training outputs mention rockets (11 of them
+   from gemini), and none mention "specific impulse". The push toward gemini came equally from word and
+   character features, and it mixed style words ("is the", "this is", "very") with topic words ("space",
+   "exhaust", "engine") that say nothing about the author.
+4. **ChatGPT has changed.** The model learned openai from 2025 versions (chatgpt-4o-latest, o3, o3-mini,
+   gpt-4.1, o4-mini and smaller variants). The answer came from today's ChatGPT, whose style may have
+   drifted: this is the time-drift limitation of Section 1.8, seen in practice.
+
+<!-- source: results/food_for_thought.csv (rank of the true family); results/confusion_tfidf_output.csv (233/293);
+results/food_for_thought_style.csv; results/food_for_thought_checks.csv (25 of 1,933; 31 and 11; 0; word/char
+score gap 0.73/0.74); results/food_for_thought_features.csv (pushing features); results/model_composition.csv (versions) -->
+
+**What this suggests.** A test accuracy of 86% describes text that resembles the test set. A single answer
+that is newer, unformatted and on an unfamiliar topic falls outside it, and the model then leans toward
+whichever family writes the most similar plain prose. An attribution tool used in practice should therefore
+report its top two families and its confidence, not one label, and should not be trusted on one plain-text
+answer. The stack-vs-queue reply shows the same pattern (plain text, predicted gemini), but its true source
+is unknown, so we do not count it either way.
 
 # References
 

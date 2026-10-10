@@ -40,6 +40,7 @@ Neural models are the mean ± std over 3 seeds. Chance is 20%.
 | **RQ2:** does the user's prompt help? | **No.** Prompt-only is at chance (no model significantly above 20%). Adding the prompt to the output gives no reliable gain. |
 | **RQ3:** do fingerprints transfer to unseen domains? | **Mostly.** Leaving a domain out of training costs 1–9 points. Math is the hardest domain to transfer to; claude is the most stable family. |
 | **RQ4:** what gives a model away? | **Mostly word choice, plus formatting.** Removing markdown hurts most among the text edits, and un-masking model names changes nothing. |
+| **Food for thought:** does it work on a brand-new answer? | **Not reliably on one plain-text answer.** A current ChatGPT reply was attributed to gemini (35.5% vs 28.7% for openai): its formatting was lost, the topic was rare in training, and ChatGPT has changed since 2025. See report Section 6. |
 
 <table>
 <tr>
@@ -114,11 +115,12 @@ restarted after an interruption.
 | 8 | `python scripts/rq4_ablations.py --models tfidf_lr length_lr`<br>`python scripts/rq4_ablations.py --models textcnn` | RQ4 ablations (CPU part, then GPU part) | ~1 h + ~45 min |
 | 9 | `python scripts/rq4_features.py` | style features and top words per family | ~5 min |
 | 10 | `python scripts/scan_pii.py` | PII scan counts, the 50-row `data/sample.csv` | <1 min |
-| 11 | `python scripts/build_report.py` | `report/report.pdf` (bundled pandoc + headless Chrome/Chromium/Edge) | <1 min |
+| 11 | `python scripts/score_reply.py` | Food for thought: scores the replies in `data/external_replies/` with the main model and explains the result | ~3 min |
+| 12 | `python scripts/build_report.py` | `report/report.pdf` (bundled pandoc + headless Chrome/Chromium/Edge) | <1 min |
 
 <sub>*Measured on a 4 GB Quadro M2000M laptop GPU. The neural scripts fall back to the CPU (slowly) without CUDA.</sub>
 
-**Recompute everything from scratch:** delete the saved results first, then run steps 1–11 in order:
+**Recompute everything from scratch:** delete the saved results first, then run steps 1–12 in order:
 
 ```bash
 rm -rf results figures splits.json
@@ -160,7 +162,9 @@ scriptum/
 │   ├── report.md         report source (each number cites its results file in a comment)
 │   ├── report.pdf        the submitted report
 │   └── style.css         print style used by build_report.py
-├── data/sample.csv       PII-free 50-row preview of the dataset
+├── data/
+│   ├── sample.csv        PII-free 50-row preview of the dataset
+│   └── external_replies/ two answers from outside the dataset (Food for thought)
 ├── splits.json           train / val / test prompt_ids
 └── requirements.txt      pinned dependencies
 ```
