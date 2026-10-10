@@ -9,7 +9,11 @@ right family **86%** of the time, against 20% chance. The fingerprint is mostly 
 ![PyTorch 2.5](https://img.shields.io/badge/pytorch-2.5-EE4C2C)
 ![Classes](https://img.shields.io/badge/classes-claude%20%C2%B7%20gemini%20%C2%B7%20llama%20%C2%B7%20openai%20%C2%B7%20qwen-555555)
 
-**CMPSC 448 midterm project.** Atharva Herwade Patil (team leader), Anuroop Saini.
+**CMPSC 448 midterm project.**
+
+**Team Members:**
+- Atharva Herwade Patil (Team Leader) - (abh6244)
+- Anuroop Saini - (abs7800)
 📄 **Full report: [`report/report.pdf`](report/report.pdf)**
 
 ---
