@@ -1,0 +1,10 @@
+value,group,train,val,test
+claude,LLM_name,1380,262,291
+gemini,LLM_name,1339,304,290
+llama,LLM_name,1344,305,284
+openai,LLM_name,1362,278,293
+qwen,LLM_name,1329,309,295
+coding,domain,2085,443,444
+creative_writing,domain,557,120,120
+general,domain,3673,803,790
+math,domain,439,92,99

@@ -1,0 +1,6 @@
+LLM_name,outputs,changed,share_changed
+claude,1933,196,0.1014
+gemini,1933,267,0.1381
+llama,1933,201,0.104
+openai,1933,272,0.1407
+qwen,1933,248,0.1283

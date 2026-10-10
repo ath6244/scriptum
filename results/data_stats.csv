@@ -1,0 +1,6 @@
+LLM_name,rows,mean_words,median_words,n_coding,n_creative_writing,n_general,n_math
+claude,1933,229.4,176.0,577,160,1087,109
+gemini,1933,760.6,682.0,591,175,1036,131
+llama,1933,471.8,449.0,600,152,1033,148
+openai,1933,426.4,367.0,623,158,1028,124
+qwen,1933,460.3,444.0,581,152,1082,118

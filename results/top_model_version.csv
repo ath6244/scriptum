@@ -1,0 +1,6 @@
+LLM_name,model_version,rows,share
+claude,claude-opus-4-20250514,355,0.1837
+gemini,gemini-2.5-flash,452,0.2338
+llama,llama-4-maverick-17b-128e-instruct,593,0.3068
+openai,chatgpt-4o-latest-20250326,392,0.2028
+qwen,qwen3-235b-a22b-no-thinking,579,0.2995

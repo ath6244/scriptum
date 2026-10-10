@@ -1,0 +1,115 @@
+  data/train-00000-of-00007.parquet: 8258 English first-turn battles
+  data/train-00001-of-00007.parquet: 8235 English first-turn battles
+  data/train-00002-of-00007.parquet: 8232 English first-turn battles
+  data/train-00003-of-00007.parquet: 8202 English first-turn battles
+  data/train-00004-of-00007.parquet: 8351 English first-turn battles
+  data/train-00005-of-00007.parquet: 8203 English first-turn battles
+  data/train-00006-of-00007.parquet: 8278 English first-turn battles
+Battles read: 135634, English + evaluation_order 1: 57759, single-turn text-only on both sides: 49166
+Rows after unpivot (2 per battle): 98332
+
+model_version -> LLM_name:
+                               model_version  LLM_name  rows
+         amazon-nova-experimental-chat-05-14 (dropped)  1098
+                        amazon.nova-pro-v1:0 (dropped)  2282
+                           command-a-03-2025 (dropped)  2525
+                              gemma-3-27b-it (dropped)  2645
+                             gemma-3n-e4b-it (dropped)   862
+                            grok-3-mini-beta (dropped)  2270
+                            grok-3-mini-high (dropped)   986
+                        grok-3-preview-02-24 (dropped)  2258
+                                 grok-4-0709 (dropped)   570
+                     hunyuan-turbos-20250416 (dropped)   540
+                        kimi-k2-0711-preview (dropped)   929
+                       magistral-medium-2506 (dropped)   728
+                                  minimax-m1 (dropped)  1877
+                   claude-3-5-haiku-20241022    claude  2410
+                  claude-3-5-sonnet-20241022    claude  2616
+                  claude-3-7-sonnet-20250219    claude  2566
+     claude-3-7-sonnet-20250219-thinking-32k    claude  2639
+                      claude-opus-4-20250514    claude  3595
+         claude-opus-4-20250514-thinking-16k    claude  2035
+                    claude-sonnet-4-20250514    claude  2843
+       claude-sonnet-4-20250514-thinking-32k    claude  1869
+                            deepseek-r1-0528  deepseek  2228
+                            deepseek-v3-0324  deepseek  2315
+                        gemini-2.0-flash-001    gemini  2448
+         gemini-2.0-flash-thinking-exp-01-21    gemini   178
+                            gemini-2.5-flash    gemini  3467
+gemini-2.5-flash-lite-preview-06-17-thinking    gemini  1758
+              gemini-2.5-flash-preview-04-17    gemini  1865
+                              gemini-2.5-pro    gemini  3224
+                gemini-2.5-pro-preview-03-25    gemini   666
+                gemini-2.5-pro-preview-05-06    gemini  1225
+                      llama-3.3-70b-instruct     llama  1883
+         llama-4-maverick-03-26-experimental     llama  2114
+          llama-4-maverick-17b-128e-instruct     llama  1960
+              llama-4-scout-17b-16e-instruct     llama   899
+                         mistral-medium-2505   mistral  3216
+                          mistral-small-2506   mistral   794
+         mistral-small-3.1-24b-instruct-2503   mistral  1117
+                  chatgpt-4o-latest-20250326    openai  2959
+                          gpt-4.1-2025-04-14    openai  2459
+                     gpt-4.1-mini-2025-04-14    openai  2202
+                           gpt-4o-2024-11-20    openai   268
+                      gpt-4o-mini-2024-07-18    openai   265
+                               o3-2025-04-16    openai  3168
+                                     o3-mini    openai  2427
+                          o4-mini-2025-04-16    openai  2416
+                         qwen-max-2025-01-25      qwen  1725
+                             qwen3-235b-a22b      qwen  1814
+               qwen3-235b-a22b-instruct-2507      qwen   226
+                 qwen3-235b-a22b-no-thinking      qwen  3258
+                               qwen3-30b-a3b      qwen  1967
+              qwen3-coder-480b-a35b-instruct      qwen     1
+                                     qwq-32b      qwen  1677
+
+Rows with a mapped family: 78762
+Rows after dropping empty inputs and outputs under 5 words: 78282
+
+Usable rows per LLM_name:
+LLM_name
+claude      20428
+openai      16073
+gemini      14715
+qwen        10628
+llama        6814
+mistral      5099
+deepseek     4525
+
+Keeping ['claude', 'gemini', 'llama', 'openai', 'qwen'], 2000 rows each
+Rows from paired cross-family battles: 9544 (4772 battles); single-side rows: 456
+
+Running language ID on outputs (langdetect, seed 0)...
+Detected output languages: {'en': 9629, 'code': 53, 'pl': 49, 'ru': 47, 'zh-cn': 36, 'fr': 24, 'ja': 21, 'de': 21, 'pt': 16, 'es': 13}
+Language filter per LLM_name (saved to results/language_filter.csv):
+          sampled  code_only_kept  dropped_non_english  after_language_filter  final
+LLM_name                                                                            
+claude       2000               5                   60                   1940   1933
+gemini       2000              19                   67                   1933   1933
+llama        2000               6                   63                   1937   1933
+openai       2000              15                   67                   1933   1933
+qwen         2000               8                   61                   1939   1933
+Downsampled every family to 1933 rows (seed 448); battles with both sides kept: 4594
+
+Saved 9665 rows to dataset.csv
+Unique prompts: 4978, answered by 2+ families: 4519
+
+LLM_name x domain:
+domain    coding  creative_writing  general  math
+LLM_name                                         
+claude       577               160     1087   109
+gemini       591               175     1036   131
+llama        600               152     1033   148
+openai       623               158     1028   124
+qwen         581               152     1082   118
+
+Saved results/model_composition.csv and results/data_stats.csv
+LLM_name  rows  mean_words  median_words  n_coding  n_creative_writing  n_general  n_math
+  claude  1933       229.4         176.0       577                 160       1087     109
+  gemini  1933       760.6         682.0       591                 175       1036     131
+   llama  1933       471.8         449.0       600                 152       1033     148
+  openai  1933       426.4         367.0       623                 158       1028     124
+    qwen  1933       460.3         444.0       581                 152       1082     118
+
+[Example rows are printed to the screen only, not saved to this log.]

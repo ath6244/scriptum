@@ -1,0 +1,6 @@
+LLM_name,sampled,code_only_kept,dropped_non_english,after_language_filter,final
+claude,2000,5,60,1940,1933
+gemini,2000,19,67,1933,1933
+llama,2000,6,63,1937,1933
+openai,2000,15,67,1933,1933
+qwen,2000,8,61,1939,1933
