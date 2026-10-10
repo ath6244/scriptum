@@ -1,0 +1,26 @@
+# secrets
+.env
+
+# python / environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# data: the full dataset is NOT committed; regenerate it with
+#   python scripts/prepare_arena.py   (seed 448)
+# A PII-free 50-row sample is committed as data/sample.csv.
+dataset.csv
+responses.jsonl
+prompts.csv
+
+# model checkpoints and raw logs
+*.pt
+*.pth
+logs/
+
+# PII-scan output prints flagged snippets; never publish it
+results/pii_scan_log.txt
+
+# build intermediate (report.pdf is the deliverable)
+report/report.html
