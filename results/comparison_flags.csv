@@ -1,0 +1,91 @@
+a,b,metric,diff,max_std,meaningful
+Majority / output_only,Length-only LR / output_only,test_acc,-0.2133,0.0,True
+Majority / output_only,Length-only LR / output_only,test_macro_f1,-0.3323,0.0,True
+Majority / output_only,TF-IDF + LR / output_only,test_acc,-0.6627,0.0,True
+Majority / output_only,TF-IDF + LR / output_only,test_macro_f1,-0.7957,0.0,True
+Majority / output_only,TextCNN / output_only,test_acc,-0.596,0.005,True
+Majority / output_only,TextCNN / output_only,test_macro_f1,-0.7293,0.0038,True
+Majority / output_only,BiLSTM / output_only,test_acc,-0.5561,0.0068,True
+Majority / output_only,BiLSTM / output_only,test_macro_f1,-0.6899,0.0062,True
+Length-only LR / output_only,TF-IDF + LR / output_only,test_acc,-0.4494,0.0,True
+Length-only LR / output_only,TF-IDF + LR / output_only,test_macro_f1,-0.4634,0.0,True
+Length-only LR / output_only,TextCNN / output_only,test_acc,-0.3827,0.005,True
+Length-only LR / output_only,TextCNN / output_only,test_macro_f1,-0.397,0.0038,True
+Length-only LR / output_only,BiLSTM / output_only,test_acc,-0.3428,0.0068,True
+Length-only LR / output_only,BiLSTM / output_only,test_macro_f1,-0.3576,0.0062,True
+TF-IDF + LR / output_only,TextCNN / output_only,test_acc,0.0667,0.005,True
+TF-IDF + LR / output_only,TextCNN / output_only,test_macro_f1,0.0664,0.0038,True
+TF-IDF + LR / output_only,BiLSTM / output_only,test_acc,0.1066,0.0068,True
+TF-IDF + LR / output_only,BiLSTM / output_only,test_macro_f1,0.1058,0.0062,True
+TextCNN / output_only,BiLSTM / output_only,test_acc,0.0399,0.0068,True
+TextCNN / output_only,BiLSTM / output_only,test_macro_f1,0.0394,0.0062,True
+Majority / input_only,Length-only LR / input_only,test_acc,-0.0062,0.0,True
+Majority / input_only,Length-only LR / input_only,test_macro_f1,-0.0903,0.0,True
+Majority / input_only,TF-IDF + LR / input_only,test_acc,-0.0186,0.0,True
+Majority / input_only,TF-IDF + LR / input_only,test_macro_f1,-0.1462,0.0,True
+Majority / input_only,TextCNN / input_only,test_acc,0.0037,0.0197,False
+Majority / input_only,TextCNN / input_only,test_macro_f1,-0.0963,0.0122,True
+Majority / input_only,BiLSTM / input_only,test_acc,-0.0053,0.0022,True
+Majority / input_only,BiLSTM / input_only,test_macro_f1,-0.1167,0.0071,True
+Length-only LR / input_only,TF-IDF + LR / input_only,test_acc,-0.0124,0.0,True
+Length-only LR / input_only,TF-IDF + LR / input_only,test_macro_f1,-0.0559,0.0,True
+Length-only LR / input_only,TextCNN / input_only,test_acc,0.0099,0.0197,False
+Length-only LR / input_only,TextCNN / input_only,test_macro_f1,-0.006,0.0122,False
+Length-only LR / input_only,BiLSTM / input_only,test_acc,0.0009,0.0022,False
+Length-only LR / input_only,BiLSTM / input_only,test_macro_f1,-0.0264,0.0071,True
+TF-IDF + LR / input_only,TextCNN / input_only,test_acc,0.0223,0.0197,True
+TF-IDF + LR / input_only,TextCNN / input_only,test_macro_f1,0.0499,0.0122,True
+TF-IDF + LR / input_only,BiLSTM / input_only,test_acc,0.0133,0.0022,True
+TF-IDF + LR / input_only,BiLSTM / input_only,test_macro_f1,0.0295,0.0071,True
+TextCNN / input_only,BiLSTM / input_only,test_acc,-0.009,0.0197,False
+TextCNN / input_only,BiLSTM / input_only,test_macro_f1,-0.0204,0.0122,True
+Majority / input_output,Length-only LR / input_output,test_acc,-0.1913,0.0,True
+Majority / input_output,Length-only LR / input_output,test_macro_f1,-0.3058,0.0,True
+Majority / input_output,TF-IDF + LR / input_output,test_acc,-0.651,0.0,True
+Majority / input_output,TF-IDF + LR / input_output,test_macro_f1,-0.7838,0.0,True
+Majority / input_output,TextCNN / input_output,test_acc,-0.6081,0.0029,True
+Majority / input_output,TextCNN / input_output,test_macro_f1,-0.7408,0.0028,True
+Majority / input_output,BiLSTM / input_output,test_acc,-0.5492,0.006,True
+Majority / input_output,BiLSTM / input_output,test_macro_f1,-0.6829,0.0059,True
+Length-only LR / input_output,TF-IDF + LR / input_output,test_acc,-0.4597,0.0,True
+Length-only LR / input_output,TF-IDF + LR / input_output,test_macro_f1,-0.478,0.0,True
+Length-only LR / input_output,TextCNN / input_output,test_acc,-0.4168,0.0029,True
+Length-only LR / input_output,TextCNN / input_output,test_macro_f1,-0.435,0.0028,True
+Length-only LR / input_output,BiLSTM / input_output,test_acc,-0.3579,0.006,True
+Length-only LR / input_output,BiLSTM / input_output,test_macro_f1,-0.3771,0.0059,True
+TF-IDF + LR / input_output,TextCNN / input_output,test_acc,0.0429,0.0029,True
+TF-IDF + LR / input_output,TextCNN / input_output,test_macro_f1,0.043,0.0028,True
+TF-IDF + LR / input_output,BiLSTM / input_output,test_acc,0.1018,0.006,True
+TF-IDF + LR / input_output,BiLSTM / input_output,test_macro_f1,0.1009,0.0059,True
+TextCNN / input_output,BiLSTM / input_output,test_acc,0.0589,0.006,True
+TextCNN / input_output,BiLSTM / input_output,test_macro_f1,0.0579,0.0059,True
+Majority / output_only,Majority / input_only,test_acc,0.0,0.0,True
+Majority / output_only,Majority / input_only,test_macro_f1,0.0,0.0,True
+Majority / output_only,Majority / input_output,test_acc,0.0,0.0,True
+Majority / output_only,Majority / input_output,test_macro_f1,0.0,0.0,True
+Majority / input_only,Majority / input_output,test_acc,0.0,0.0,True
+Majority / input_only,Majority / input_output,test_macro_f1,0.0,0.0,True
+Length-only LR / output_only,Length-only LR / input_only,test_acc,0.2071,0.0,True
+Length-only LR / output_only,Length-only LR / input_only,test_macro_f1,0.242,0.0,True
+Length-only LR / output_only,Length-only LR / input_output,test_acc,0.022,0.0,True
+Length-only LR / output_only,Length-only LR / input_output,test_macro_f1,0.0265,0.0,True
+Length-only LR / input_only,Length-only LR / input_output,test_acc,-0.1851,0.0,True
+Length-only LR / input_only,Length-only LR / input_output,test_macro_f1,-0.2155,0.0,True
+TF-IDF + LR / output_only,TF-IDF + LR / input_only,test_acc,0.6441,0.0,True
+TF-IDF + LR / output_only,TF-IDF + LR / input_only,test_macro_f1,0.6495,0.0,True
+TF-IDF + LR / output_only,TF-IDF + LR / input_output,test_acc,0.0117,0.0,True
+TF-IDF + LR / output_only,TF-IDF + LR / input_output,test_macro_f1,0.0119,0.0,True
+TF-IDF + LR / input_only,TF-IDF + LR / input_output,test_acc,-0.6324,0.0,True
+TF-IDF + LR / input_only,TF-IDF + LR / input_output,test_macro_f1,-0.6376,0.0,True
+TextCNN / output_only,TextCNN / input_only,test_acc,0.5997,0.0197,True
+TextCNN / output_only,TextCNN / input_only,test_macro_f1,0.633,0.0122,True
+TextCNN / output_only,TextCNN / input_output,test_acc,-0.0121,0.005,True
+TextCNN / output_only,TextCNN / input_output,test_macro_f1,-0.0115,0.0038,True
+TextCNN / input_only,TextCNN / input_output,test_acc,-0.6118,0.0197,True
+TextCNN / input_only,TextCNN / input_output,test_macro_f1,-0.6445,0.0122,True
+BiLSTM / output_only,BiLSTM / input_only,test_acc,0.5508,0.0068,True
+BiLSTM / output_only,BiLSTM / input_only,test_macro_f1,0.5732,0.0071,True
+BiLSTM / output_only,BiLSTM / input_output,test_acc,0.0069,0.0068,True
+BiLSTM / output_only,BiLSTM / input_output,test_macro_f1,0.007,0.0062,True
+BiLSTM / input_only,BiLSTM / input_output,test_acc,-0.5439,0.006,True
+BiLSTM / input_only,BiLSTM / input_output,test_macro_f1,-0.5662,0.0071,True

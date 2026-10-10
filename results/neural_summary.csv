@@ -1,0 +1,7 @@
+model,condition,test_acc_mean,test_acc_std,test_macro_f1_mean,test_macro_f1_std,best_epoch_mean,params,train_time_s_mean
+textcnn,output_only,0.7963,0.005,0.796,0.0038,12.6667,7558669,175.8667
+textcnn,input_only,0.1966,0.0197,0.163,0.0122,3.0,7558669,63.1667
+textcnn,input_output,0.8084,0.0029,0.8075,0.0028,12.0,7558669,170.3667
+bilstm,output_only,0.7564,0.0068,0.7566,0.0062,7.3333,8064005,379.8667
+bilstm,input_only,0.2056,0.0022,0.1834,0.0071,6.0,8064005,163.2
+bilstm,input_output,0.7495,0.006,0.7496,0.0059,7.3333,8064005,381.7333
