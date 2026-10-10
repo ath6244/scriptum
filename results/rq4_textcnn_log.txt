@@ -1,0 +1,284 @@
+length_matched cuts every output to 188 words
+
+=== textcnn / no_markdown / seed 448 ===
+    epoch  1  train loss 1.5902  val acc 0.602  val F1 0.602
+    epoch  2  train loss 1.1578  val acc 0.608  val F1 0.602
+    epoch  3  train loss 0.9954  val acc 0.693  val F1 0.692
+    epoch  4  train loss 0.8749  val acc 0.713  val F1 0.713
+    epoch  5  train loss 0.8029  val acc 0.697  val F1 0.694
+    epoch  6  train loss 0.7564  val acc 0.728  val F1 0.729
+    epoch  7  train loss 0.6964  val acc 0.733  val F1 0.730
+    epoch  8  train loss 0.6158  val acc 0.746  val F1 0.744
+    epoch  9  train loss 0.5763  val acc 0.755  val F1 0.754
+    epoch 10  train loss 0.5313  val acc 0.739  val F1 0.741
+    epoch 11  train loss 0.4744  val acc 0.746  val F1 0.743
+    epoch 12  train loss 0.4113  val acc 0.734  val F1 0.732
+  acc 0.746  macro-F1 0.742  (147s)
+
+=== textcnn / no_markdown / seed 449 ===
+    epoch  1  train loss 1.5662  val acc 0.624  val F1 0.620
+    epoch  2  train loss 1.1119  val acc 0.680  val F1 0.672
+    epoch  3  train loss 0.9638  val acc 0.701  val F1 0.703
+    epoch  4  train loss 0.8704  val acc 0.709  val F1 0.706
+    epoch  5  train loss 0.7893  val acc 0.717  val F1 0.715
+    epoch  6  train loss 0.7278  val acc 0.723  val F1 0.719
+    epoch  7  train loss 0.6756  val acc 0.717  val F1 0.721
+    epoch  8  train loss 0.6214  val acc 0.740  val F1 0.737
+    epoch  9  train loss 0.5882  val acc 0.732  val F1 0.728
+    epoch 10  train loss 0.5290  val acc 0.752  val F1 0.753
+    epoch 11  train loss 0.4625  val acc 0.752  val F1 0.753
+    epoch 12  train loss 0.4081  val acc 0.742  val F1 0.742
+    epoch 13  train loss 0.3550  val acc 0.741  val F1 0.742
+    epoch 14  train loss 0.3111  val acc 0.754  val F1 0.754
+    epoch 15  train loss 0.2679  val acc 0.747  val F1 0.745
+    epoch 16  train loss 0.2299  val acc 0.749  val F1 0.748
+    epoch 17  train loss 0.1995  val acc 0.762  val F1 0.762
+    epoch 18  train loss 0.1577  val acc 0.757  val F1 0.757
+    epoch 19  train loss 0.1483  val acc 0.740  val F1 0.742
+    epoch 20  train loss 0.1222  val acc 0.750  val F1 0.749
+  acc 0.762  macro-F1 0.761  (236s)
+
+=== textcnn / no_markdown / seed 450 ===
+    epoch  1  train loss 1.5934  val acc 0.649  val F1 0.646
+    epoch  2  train loss 1.1506  val acc 0.671  val F1 0.673
+    epoch  3  train loss 0.9790  val acc 0.704  val F1 0.705
+    epoch  4  train loss 0.8985  val acc 0.699  val F1 0.694
+    epoch  5  train loss 0.8081  val acc 0.722  val F1 0.724
+    epoch  6  train loss 0.7459  val acc 0.734  val F1 0.734
+    epoch  7  train loss 0.6822  val acc 0.744  val F1 0.744
+    epoch  8  train loss 0.6222  val acc 0.727  val F1 0.731
+    epoch  9  train loss 0.5572  val acc 0.743  val F1 0.742
+    epoch 10  train loss 0.5133  val acc 0.751  val F1 0.750
+    epoch 11  train loss 0.4521  val acc 0.752  val F1 0.751
+    epoch 12  train loss 0.4071  val acc 0.765  val F1 0.765
+    epoch 13  train loss 0.3591  val acc 0.748  val F1 0.746
+    epoch 14  train loss 0.3129  val acc 0.752  val F1 0.753
+    epoch 15  train loss 0.2739  val acc 0.760  val F1 0.761
+  acc 0.741  macro-F1 0.740  (181s)
+  no_opener leaves 1.3% of train outputs empty (single-sentence outputs)
+
+=== textcnn / no_opener / seed 448 ===
+    epoch  1  train loss 1.4247  val acc 0.665  val F1 0.660
+    epoch  2  train loss 0.9801  val acc 0.732  val F1 0.731
+    epoch  3  train loss 0.8514  val acc 0.737  val F1 0.735
+    epoch  4  train loss 0.7439  val acc 0.738  val F1 0.734
+    epoch  5  train loss 0.7001  val acc 0.757  val F1 0.759
+    epoch  6  train loss 0.6527  val acc 0.765  val F1 0.763
+    epoch  7  train loss 0.6028  val acc 0.765  val F1 0.762
+    epoch  8  train loss 0.5422  val acc 0.770  val F1 0.767
+    epoch  9  train loss 0.5133  val acc 0.757  val F1 0.756
+    epoch 10  train loss 0.4414  val acc 0.770  val F1 0.768
+    epoch 11  train loss 0.4057  val acc 0.773  val F1 0.771
+    epoch 12  train loss 0.3572  val acc 0.778  val F1 0.778
+    epoch 13  train loss 0.3141  val acc 0.781  val F1 0.779
+    epoch 14  train loss 0.2706  val acc 0.787  val F1 0.786
+    epoch 15  train loss 0.2299  val acc 0.772  val F1 0.773
+    epoch 16  train loss 0.2088  val acc 0.777  val F1 0.776
+    epoch 17  train loss 0.1786  val acc 0.781  val F1 0.779
+  acc 0.790  macro-F1 0.790  (202s)
+
+=== textcnn / no_opener / seed 449 ===
+    epoch  1  train loss 1.4441  val acc 0.700  val F1 0.699
+    epoch  2  train loss 1.0036  val acc 0.745  val F1 0.744
+    epoch  3  train loss 0.8652  val acc 0.731  val F1 0.727
+    epoch  4  train loss 0.7785  val acc 0.748  val F1 0.742
+    epoch  5  train loss 0.7213  val acc 0.750  val F1 0.750
+    epoch  6  train loss 0.6687  val acc 0.744  val F1 0.743
+    epoch  7  train loss 0.6273  val acc 0.744  val F1 0.744
+    epoch  8  train loss 0.5816  val acc 0.765  val F1 0.763
+    epoch  9  train loss 0.5269  val acc 0.759  val F1 0.760
+    epoch 10  train loss 0.4881  val acc 0.770  val F1 0.768
+    epoch 11  train loss 0.4487  val acc 0.769  val F1 0.768
+    epoch 12  train loss 0.3952  val acc 0.767  val F1 0.767
+    epoch 13  train loss 0.3432  val acc 0.764  val F1 0.763
+    epoch 14  train loss 0.3037  val acc 0.759  val F1 0.758
+  acc 0.772  macro-F1 0.772  (167s)
+
+=== textcnn / no_opener / seed 450 ===
+    epoch  1  train loss 1.4502  val acc 0.674  val F1 0.666
+    epoch  2  train loss 0.9899  val acc 0.693  val F1 0.695
+    epoch  3  train loss 0.8645  val acc 0.744  val F1 0.743
+    epoch  4  train loss 0.7654  val acc 0.746  val F1 0.741
+    epoch  5  train loss 0.7251  val acc 0.750  val F1 0.748
+    epoch  6  train loss 0.6590  val acc 0.770  val F1 0.768
+    epoch  7  train loss 0.6065  val acc 0.758  val F1 0.752
+    epoch  8  train loss 0.5554  val acc 0.769  val F1 0.769
+    epoch  9  train loss 0.5009  val acc 0.771  val F1 0.770
+    epoch 10  train loss 0.4541  val acc 0.774  val F1 0.775
+    epoch 11  train loss 0.4156  val acc 0.766  val F1 0.764
+    epoch 12  train loss 0.3645  val acc 0.784  val F1 0.783
+    epoch 13  train loss 0.3296  val acc 0.782  val F1 0.782
+    epoch 14  train loss 0.2815  val acc 0.791  val F1 0.791
+    epoch 15  train loss 0.2459  val acc 0.781  val F1 0.780
+    epoch 16  train loss 0.2124  val acc 0.781  val F1 0.781
+    epoch 17  train loss 0.1753  val acc 0.791  val F1 0.790
+  acc 0.776  macro-F1 0.776  (202s)
+
+=== textcnn / length_matched / seed 448 ===
+    epoch  1  train loss 1.4572  val acc 0.660  val F1 0.662
+    epoch  2  train loss 0.9817  val acc 0.726  val F1 0.726
+    epoch  3  train loss 0.8272  val acc 0.759  val F1 0.757
+    epoch  4  train loss 0.7362  val acc 0.750  val F1 0.747
+    epoch  5  train loss 0.6827  val acc 0.774  val F1 0.775
+    epoch  6  train loss 0.6163  val acc 0.778  val F1 0.777
+    epoch  7  train loss 0.5629  val acc 0.774  val F1 0.773
+    epoch  8  train loss 0.4953  val acc 0.785  val F1 0.783
+    epoch  9  train loss 0.4492  val acc 0.776  val F1 0.774
+    epoch 10  train loss 0.3931  val acc 0.776  val F1 0.777
+    epoch 11  train loss 0.3600  val acc 0.798  val F1 0.798
+    epoch 12  train loss 0.3083  val acc 0.798  val F1 0.799
+    epoch 13  train loss 0.2688  val acc 0.786  val F1 0.785
+    epoch 14  train loss 0.2284  val acc 0.780  val F1 0.779
+    epoch 15  train loss 0.1914  val acc 0.787  val F1 0.785
+  acc 0.793  macro-F1 0.794  (160s)
+
+=== textcnn / length_matched / seed 449 ===
+    epoch  1  train loss 1.4770  val acc 0.700  val F1 0.698
+    epoch  2  train loss 1.0025  val acc 0.753  val F1 0.752
+    epoch  3  train loss 0.8395  val acc 0.751  val F1 0.752
+    epoch  4  train loss 0.7330  val acc 0.765  val F1 0.761
+    epoch  5  train loss 0.6713  val acc 0.772  val F1 0.772
+    epoch  6  train loss 0.6114  val acc 0.781  val F1 0.778
+    epoch  7  train loss 0.5578  val acc 0.789  val F1 0.790
+    epoch  8  train loss 0.4975  val acc 0.791  val F1 0.789
+    epoch  9  train loss 0.4556  val acc 0.798  val F1 0.797
+    epoch 10  train loss 0.3947  val acc 0.799  val F1 0.799
+    epoch 11  train loss 0.3392  val acc 0.796  val F1 0.796
+    epoch 12  train loss 0.3114  val acc 0.790  val F1 0.791
+    epoch 13  train loss 0.2604  val acc 0.797  val F1 0.797
+  acc 0.791  macro-F1 0.789  (139s)
+
+=== textcnn / length_matched / seed 450 ===
+    epoch  1  train loss 1.4215  val acc 0.700  val F1 0.697
+    epoch  2  train loss 0.9988  val acc 0.734  val F1 0.736
+    epoch  3  train loss 0.8404  val acc 0.770  val F1 0.769
+    epoch  4  train loss 0.7311  val acc 0.752  val F1 0.744
+    epoch  5  train loss 0.6876  val acc 0.773  val F1 0.771
+    epoch  6  train loss 0.6074  val acc 0.771  val F1 0.765
+    epoch  7  train loss 0.5479  val acc 0.792  val F1 0.790
+    epoch  8  train loss 0.5122  val acc 0.794  val F1 0.793
+    epoch  9  train loss 0.4517  val acc 0.787  val F1 0.788
+    epoch 10  train loss 0.4152  val acc 0.799  val F1 0.798
+    epoch 11  train loss 0.3493  val acc 0.802  val F1 0.802
+    epoch 12  train loss 0.2983  val acc 0.807  val F1 0.805
+    epoch 13  train loss 0.2606  val acc 0.784  val F1 0.783
+    epoch 14  train loss 0.2047  val acc 0.805  val F1 0.805
+    epoch 15  train loss 0.1799  val acc 0.802  val F1 0.802
+  acc 0.787  macro-F1 0.785  (160s)
+
+=== textcnn / no_markdown_length_matched / seed 448 ===
+    epoch  1  train loss 1.5873  val acc 0.588  val F1 0.583
+    epoch  2  train loss 1.1389  val acc 0.643  val F1 0.638
+    epoch  3  train loss 0.9794  val acc 0.679  val F1 0.676
+    epoch  4  train loss 0.8976  val acc 0.692  val F1 0.688
+    epoch  5  train loss 0.8043  val acc 0.684  val F1 0.679
+    epoch  6  train loss 0.7350  val acc 0.698  val F1 0.697
+    epoch  7  train loss 0.6779  val acc 0.709  val F1 0.706
+    epoch  8  train loss 0.6083  val acc 0.728  val F1 0.727
+    epoch  9  train loss 0.5508  val acc 0.728  val F1 0.728
+    epoch 10  train loss 0.4911  val acc 0.724  val F1 0.724
+    epoch 11  train loss 0.4272  val acc 0.740  val F1 0.741
+    epoch 12  train loss 0.3871  val acc 0.739  val F1 0.740
+    epoch 13  train loss 0.3271  val acc 0.728  val F1 0.729
+    epoch 14  train loss 0.2658  val acc 0.737  val F1 0.738
+  acc 0.745  macro-F1 0.744  (146s)
+
+=== textcnn / no_markdown_length_matched / seed 449 ===
+    epoch  1  train loss 1.6069  val acc 0.586  val F1 0.584
+    epoch  2  train loss 1.1795  val acc 0.641  val F1 0.631
+    epoch  3  train loss 0.9967  val acc 0.690  val F1 0.692
+    epoch  4  train loss 0.9049  val acc 0.708  val F1 0.709
+    epoch  5  train loss 0.8063  val acc 0.693  val F1 0.695
+    epoch  6  train loss 0.7383  val acc 0.718  val F1 0.719
+    epoch  7  train loss 0.6792  val acc 0.723  val F1 0.724
+    epoch  8  train loss 0.5972  val acc 0.730  val F1 0.730
+    epoch  9  train loss 0.5485  val acc 0.731  val F1 0.731
+    epoch 10  train loss 0.4865  val acc 0.739  val F1 0.738
+    epoch 11  train loss 0.4124  val acc 0.714  val F1 0.711
+    epoch 12  train loss 0.3812  val acc 0.730  val F1 0.732
+    epoch 13  train loss 0.3215  val acc 0.703  val F1 0.701
+  acc 0.733  macro-F1 0.733  (136s)
+
+=== textcnn / no_markdown_length_matched / seed 450 ===
+    epoch  1  train loss 1.5855  val acc 0.632  val F1 0.632
+    epoch  2  train loss 1.1553  val acc 0.664  val F1 0.665
+    epoch  3  train loss 1.0002  val acc 0.696  val F1 0.697
+    epoch  4  train loss 0.8955  val acc 0.662  val F1 0.663
+    epoch  5  train loss 0.8065  val acc 0.726  val F1 0.727
+    epoch  6  train loss 0.7251  val acc 0.723  val F1 0.724
+    epoch  7  train loss 0.6731  val acc 0.717  val F1 0.712
+    epoch  8  train loss 0.6067  val acc 0.733  val F1 0.735
+    epoch  9  train loss 0.5417  val acc 0.727  val F1 0.725
+    epoch 10  train loss 0.4943  val acc 0.729  val F1 0.731
+    epoch 11  train loss 0.4209  val acc 0.726  val F1 0.727
+  acc 0.738  macro-F1 0.738  (115s)
+
+=== textcnn / unmasked / seed 448 ===
+    epoch  1  train loss 1.4019  val acc 0.668  val F1 0.669
+    epoch  2  train loss 0.9391  val acc 0.744  val F1 0.745
+    epoch  3  train loss 0.8146  val acc 0.755  val F1 0.751
+    epoch  4  train loss 0.7264  val acc 0.775  val F1 0.774
+    epoch  5  train loss 0.6693  val acc 0.769  val F1 0.770
+    epoch  6  train loss 0.6058  val acc 0.776  val F1 0.776
+    epoch  7  train loss 0.5461  val acc 0.794  val F1 0.793
+    epoch  8  train loss 0.5203  val acc 0.782  val F1 0.780
+    epoch  9  train loss 0.4698  val acc 0.793  val F1 0.793
+    epoch 10  train loss 0.4242  val acc 0.789  val F1 0.788
+    epoch 11  train loss 0.3910  val acc 0.806  val F1 0.805
+    epoch 12  train loss 0.3426  val acc 0.804  val F1 0.804
+    epoch 13  train loss 0.3042  val acc 0.800  val F1 0.800
+    epoch 14  train loss 0.2494  val acc 0.812  val F1 0.812
+    epoch 15  train loss 0.2241  val acc 0.809  val F1 0.808
+    epoch 16  train loss 0.1914  val acc 0.799  val F1 0.798
+    epoch 17  train loss 0.1634  val acc 0.804  val F1 0.804
+  acc 0.805  macro-F1 0.804  (203s)
+
+=== textcnn / unmasked / seed 449 ===
+    epoch  1  train loss 1.4513  val acc 0.708  val F1 0.705
+    epoch  2  train loss 0.9885  val acc 0.754  val F1 0.752
+    epoch  3  train loss 0.8224  val acc 0.753  val F1 0.753
+    epoch  4  train loss 0.7379  val acc 0.767  val F1 0.765
+    epoch  5  train loss 0.6781  val acc 0.765  val F1 0.765
+    epoch  6  train loss 0.6122  val acc 0.779  val F1 0.778
+    epoch  7  train loss 0.5687  val acc 0.778  val F1 0.780
+    epoch  8  train loss 0.5162  val acc 0.791  val F1 0.789
+    epoch  9  train loss 0.4814  val acc 0.800  val F1 0.798
+    epoch 10  train loss 0.4294  val acc 0.800  val F1 0.794
+    epoch 11  train loss 0.3942  val acc 0.804  val F1 0.805
+    epoch 12  train loss 0.3417  val acc 0.802  val F1 0.801
+    epoch 13  train loss 0.3032  val acc 0.791  val F1 0.790
+    epoch 14  train loss 0.2482  val acc 0.799  val F1 0.797
+  acc 0.797  macro-F1 0.797  (168s)
+
+=== textcnn / unmasked / seed 450 ===
+    epoch  1  train loss 1.4312  val acc 0.706  val F1 0.704
+    epoch  2  train loss 0.9879  val acc 0.738  val F1 0.740
+    epoch  3  train loss 0.8307  val acc 0.772  val F1 0.771
+    epoch  4  train loss 0.7389  val acc 0.759  val F1 0.751
+    epoch  5  train loss 0.6890  val acc 0.789  val F1 0.790
+    epoch  6  train loss 0.6271  val acc 0.789  val F1 0.788
+    epoch  7  train loss 0.5757  val acc 0.783  val F1 0.781
+    epoch  8  train loss 0.5327  val acc 0.796  val F1 0.796
+    epoch  9  train loss 0.4898  val acc 0.773  val F1 0.772
+    epoch 10  train loss 0.4460  val acc 0.796  val F1 0.796
+    epoch 11  train loss 0.3812  val acc 0.795  val F1 0.792
+  acc 0.798  macro-F1 0.797  (134s)
+
+Saved results/rq4_ablations.csv and figures/rq4_ablation_drops.png
+         model                    variant  n_seeds    acc  acc_ci_low  acc_ci_high  drop_acc  drop_acc_ci_low  drop_acc_ci_high  drop_ci_excludes_0
+   TF-IDF + LR                     masked        1 0.8630      0.8440       0.8816    0.0000           0.0000            0.0000               False
+   TF-IDF + LR                no_markdown        1 0.8424      0.8216       0.8615    0.0206           0.0068            0.0346                True
+   TF-IDF + LR                  no_opener        1 0.8541      0.8347       0.8733    0.0089          -0.0027            0.0207               False
+   TF-IDF + LR             length_matched        1 0.8341      0.8135       0.8534    0.0289           0.0144            0.0435                True
+   TF-IDF + LR no_markdown_length_matched        1 0.7880      0.7663       0.8089    0.0750           0.0562            0.0946                True
+   TF-IDF + LR                   unmasked        1 0.8637      0.8451       0.8827   -0.0007          -0.0063            0.0049               False
+   TF-IDF + LR no_markdown_no_emoji_punct        1 0.8183      0.7972       0.8382    0.0447           0.0289            0.0615                True
+   TF-IDF + LR                  word_only        1 0.7873      0.7651       0.8094    0.0757           0.0572            0.0938                True
+       TextCNN                     masked        3 0.7963      0.7776       0.8146    0.0000           0.0000            0.0000               False
+       TextCNN                no_markdown        3 0.7495      0.7303       0.7691    0.0468           0.0315            0.0620                True
+       TextCNN                  no_opener        3 0.7795      0.7590       0.7990    0.0167           0.0050            0.0294                True
+       TextCNN             length_matched        3 0.7901      0.7706       0.8085    0.0062          -0.0049            0.0176               False
+       TextCNN no_markdown_length_matched        3 0.7385      0.7183       0.7577    0.0578           0.0415            0.0750                True
+       TextCNN                   unmasked        3 0.8000      0.7806       0.8180   -0.0037          -0.0128            0.0055               False
+Length-only LR                     masked        1 0.4136      0.3873       0.4391    0.0000           0.0000            0.0000               False
+Length-only LR             length_matched        1 0.3173      0.2941       0.3400    0.0964           0.0676            0.1261                True

@@ -1,0 +1,76 @@
+LLM_name,rank,feature,weight
+claude,1,like me,3.7321
+claude,2,me to,3.3276
+claude,3,rs,3.1718
+claude,4,would,2.9228
+claude,5,when,2.8995
+claude,6,to explain,2.8741
+claude,7,about,2.686
+claude,8,rather than,2.6748
+claude,9,explain,2.662
+claude,10,several,2.4737
+claude,11,most,2.3856
+claude,12,they re,2.3515
+claude,13,since,2.2628
+claude,14,rather,2.1066
+claude,15,through,2.09
+gemini,1,okay,6.7732
+gemini,2,this is,5.1582
+gemini,3,let count,3.9522
+gemini,4,okay here,3.6589
+gemini,5,are three,3.3752
+gemini,6,is the,3.1011
+gemini,7,of course,2.8132
+gemini,8,very,2.8124
+gemini,9,within,2.5048
+gemini,10,course,2.4855
+gemini,11,core,2.4136
+gemini,12,in strawberry,2.3324
+gemini,13,tell,2.2994
+gemini,14,tell me,2.2343
+gemini,15,yes,2.2207
+llama,1,here is,3.4412
+llama,2,such as,3.1511
+llama,3,ve,2.7184
+llama,4,can be,2.6668
+llama,5,such,2.551
+llama,6,and the,2.4008
+llama,7,of the,2.3981
+llama,8,however,2.3345
+llama,9,are in,2.2784
+llama,10,is,2.2742
+llama,11,not,2.2709
+llama,12,you re,2.2084
+llama,13,the given,2.1519
+llama,14,with that,2.1159
+llama,15,be,2.0979
+openai,1,you want,4.0115
+openai,2,so,3.76
+openai,3,want,3.7023
+openai,4,if you,3.6915
+openai,5,want can,3.4529
+openai,6,summary,3.3444
+openai,7,certainly,3.0016
+openai,8,below is,2.9614
+openai,9,etc,2.8911
+openai,10,contains,2.6717
+openai,11,sorry,2.4945
+openai,12,sorry but,2.4835
+openai,13,every,2.4647
+openai,14,or,2.4335
+openai,15,below,2.4321
+qwen,1,know if,3.8849
+qwen,2,me know,3.188
+qwen,3,may,2.9132
+qwen,4,that request,2.873
+qwen,5,let me,2.821
+qwen,6,key,2.7316
+qwen,7,due to,2.5972
+qwen,8,sure ll,2.5492
+qwen,9,due,2.5132
+qwen,10,while,2.4397
+qwen,11,final,2.3641
+qwen,12,structured,2.3084
+qwen,13,tools,2.3038
+qwen,14,ensures,2.2239
+qwen,15,final answer,2.2087
