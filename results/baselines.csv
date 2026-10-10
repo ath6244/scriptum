@@ -1,0 +1,10 @@
+baseline,condition,test_acc_mean,test_acc_std,test_macro_f1_mean,test_macro_f1_std,val_macro_f1_mean,chance_acc
+majority,output_only,0.2003,0.0,0.0667,0.0,0.0609,0.2
+majority,input_only,0.2003,0.0,0.0667,0.0,0.0609,0.2
+majority,input_output,0.2003,0.0,0.0667,0.0,0.0609,0.2
+length_lr,output_only,0.4136,0.0,0.399,0.0,0.3732,0.2
+length_lr,input_only,0.2065,0.0,0.157,0.0,0.1585,0.2
+length_lr,input_output,0.3916,0.0,0.3725,0.0,0.3639,0.2
+tfidf_lr,output_only,0.863,0.0,0.8624,0.0,0.8658,0.2
+tfidf_lr,input_only,0.2189,0.0,0.2129,0.0,0.2055,0.2
+tfidf_lr,input_output,0.8513,0.0,0.8505,0.0,0.8468,0.2

@@ -1,0 +1,6 @@
+,pred_claude,pred_gemini,pred_llama,pred_openai,pred_qwen
+true_claude,274,6,4,4,3
+true_gemini,9,263,12,5,1
+true_llama,12,8,259,3,2
+true_openai,11,2,12,233,35
+true_qwen,16,3,9,42,225
