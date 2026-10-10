@@ -1,0 +1,65 @@
+A stack and a queue are both linear data structures used to store collections of elements, but they differ fundamentally in the order in which elements are added and removed.
+
+THE STACK (LIFO: Last-In, First-Out)
+
+Think of a stack like a vertical stack of plates in a cafeteria.
+
+How it works:
+You can only put a new plate on top, and if you want to take a plate, you take it from the very top. The last plate you set down is the first one you pick up.
+
+Core operations:
+
+* push: Add an item to the top.
+* pop: Remove and return the item from the top.
+* peek / top: Look at the top item without removing it.
+
+Real-world CS examples:
+
+* Undo/Redo (Ctrl + Z): Your most recent edit is the first one undone.
+* The Call Stack: When a function calls another function, the computer places it on the call stack; when the function finishes, it is popped off.
+* Browser History Back Button: Navigating back takes you to the most recently visited page.
+
+THE QUEUE (FIFO: First-In, First-Out)
+
+Think of a queue like a line of people waiting for coffee.
+
+How it works:
+People join at the back of the line, and people leave from the front once they are served. The first person to arrive is the first person out.
+
+Core operations:
+
+* enqueue: Add an item to the back (tail).
+* dequeue: Remove and return the item from the front (head).
+* peek / front: Look at the front item without removing it.
+
+Real-world CS examples:
+
+* Printer Spooling: Print jobs are executed in the order they were submitted.
+* CPU Task Scheduling: Processes waiting in a ready queue are scheduled based on arrival order.
+* Breadth-First Search (BFS): Graph traversal algorithms use queues to explore nodes layer by layer.
+
+SUMMARY COMPARISON
+
+Feature: Ordering Principle
+Stack: LIFO (Last-In, First-Out)
+Queue: FIFO (First-In, First-Out)
+
+Feature: Insertion Point
+Stack: Top (push)
+Queue: Back / Rear (enqueue)
+
+Feature: Removal Point
+Stack: Top (pop)
+Queue: Front (dequeue)
+
+Feature: Primary Mental Model
+Stack: Stack of plates / Pringles can
+Queue: Waiting in line / Drive-thru
+
+Feature: Classic Algorithm
+Stack: Depth-First Search (DFS)
+Queue: Breadth-First Search (BFS)
+
+Feature: Time Complexity
+Stack: O(1) for push and pop
+Queue: O(1) for enqueue and dequeue

@@ -1,0 +1,3 @@
+file,question,true_source,topic_terms
+stack_vs_queue.txt,Explain the difference between a stack and a queue to a freshman in computer science.,unknown,stack;queue
+hydrogen_rocket_fuel.txt,"(not given; the reply is titled ""Why Do We Use Hydrogen as a Fuel for Rockets?"")",openai,rocket;specific impulse

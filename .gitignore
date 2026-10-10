@@ -24,3 +24,6 @@ results/pii_scan_log.txt
 
 # build intermediate (report.pdf is the deliverable)
 report/report.html
+
+# cached fitted model written by scripts/score_reply.py (local only)
+models/

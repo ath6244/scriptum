@@ -1,0 +1,36 @@
+Why Do We Use Hydrogen as a Fuel for Rockets?
+We use hydrogen as a rocket fuel because it releases a large amount of energy when it reacts with oxygen and produces lightweight exhaust gases that can travel at very high speeds. This helps rockets achieve high efficiency and reach the enormous speeds needed for space travel.
+1. Hydrogen Releases a Lot of Energy
+Hydrogen reacts with oxygen to produce water and release energy.
+Chemical equation:
+2H2 + O2 → 2H2O + energy
+Hydrogen releases approximately 120 megajoules of energy per kilogram, making it one of the best fuels in terms of energy per unit of mass.
+This is important because rockets must carry their own fuel. A lighter fuel that provides a lot of energy can help reduce the amount of fuel mass a rocket needs to carry.
+2. Hydrogen Produces Lightweight Exhaust Gases
+When hydrogen burns with oxygen, the main product is water vapor.
+Hydrogen molecules are very light compared with many other molecules. Lightweight gases can achieve higher speeds at the same temperature.
+In a rocket engine, the hot exhaust gases expand through a nozzle and shoot backward at extremely high speeds. According to Newton's third law, the rocket is pushed forward in the opposite direction.
+Because hydrogen helps produce lightweight exhaust gases, hydrogen-powered rocket engines can achieve very high exhaust velocities.
+3. Hydrogen Provides High Efficiency
+Rocket efficiency is often measured using a quantity called specific impulse. It describes how effectively a rocket uses its propellant to produce thrust.
+Higher exhaust velocity generally means higher specific impulse, allowing a rocket to obtain more change in velocity from a given amount of propellant.
+Hydrogen-oxygen engines can achieve higher specific impulse than many conventional chemical rocket engines, making them particularly useful for upper stages and space missions.
+4. Hydrogen Can Burn in Space
+Unlike cars, rockets cannot depend on oxygen from the surrounding air because space has no usable atmosphere.
+Therefore, rockets carry both hydrogen, which is the fuel, and liquid oxygen, which is the oxidizer.
+The two substances react inside the engine to produce hot gases. These gases escape through the nozzle and push the rocket forward.
+5. Disadvantages of Hydrogen
+Despite its advantages, hydrogen has several disadvantages.
+- Low density: Liquid hydrogen occupies a large volume, so rockets need large fuel tanks.
+- Extremely low temperature: Hydrogen must be cooled to approximately -253°C to remain liquid at atmospheric pressure.
+- Storage difficulties: Hydrogen requires specialized insulated tanks and plumbing to limit heat transfer and fuel loss.
+- Engineering costs: Handling and storing liquid hydrogen makes rocket design more complicated.
+Because of these disadvantages, some rockets use kerosene or methane instead. These fuels are denser and easier to store in compact tanks.
+6. Why Is Hydrogen Especially Useful for Upper Stages?
+The first stage of a rocket must lift the entire vehicle off the launchpad and overcome gravity and atmospheric drag. Dense fuels such as kerosene can be advantageous for this purpose.
+Upper stages operate after the lower stages have separated. At this point, high fuel efficiency becomes especially valuable because the rocket needs additional velocity to reach orbit or travel farther into space.
+Hydrogen's high specific impulse makes it a strong choice for these upper stages.
+Conclusion
+Hydrogen is used as a rocket fuel because it releases a large amount of energy per kilogram, produces lightweight exhaust gases, and enables high exhaust velocities and excellent fuel efficiency. These properties make it particularly useful for launching satellites and sending spacecraft into orbit or beyond Earth.
+However, hydrogen's low density and difficult storage requirements mean that it is not always the best choice for every rocket.
+The main reason we use hydrogen is that it allows rockets to convert chemical energy into high-speed exhaust very efficiently, helping them achieve the large velocity changes required for space travel.

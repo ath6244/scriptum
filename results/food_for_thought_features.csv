@@ -1,0 +1,21 @@
+file,pushes_toward,rank,feature,contribution
+hydrogen_rocket_fuel.txt,gemini,1,is the,0.1496
+hydrogen_rocket_fuel.txt,gemini,2,space,0.1108
+hydrogen_rocket_fuel.txt,gemini,3,this is,0.1011
+hydrogen_rocket_fuel.txt,gemini,4,this,0.0967
+hydrogen_rocket_fuel.txt,gemini,5,very,0.0932
+hydrogen_rocket_fuel.txt,gemini,6,provides,0.0875
+hydrogen_rocket_fuel.txt,gemini,7,particularly,0.0868
+hydrogen_rocket_fuel.txt,gemini,8,exhaust,0.0777
+hydrogen_rocket_fuel.txt,gemini,9,engine,0.0738
+hydrogen_rocket_fuel.txt,gemini,10,specific,0.0734
+hydrogen_rocket_fuel.txt,openai,1,char:'.\n-',-0.1188
+hydrogen_rocket_fuel.txt,openai,2,char:'.\n- ',-0.1186
+hydrogen_rocket_fuel.txt,openai,3,char:'\n- ',-0.1099
+hydrogen_rocket_fuel.txt,openai,4,such as,-0.0898
+hydrogen_rocket_fuel.txt,openai,5,additional,-0.0887
+hydrogen_rocket_fuel.txt,openai,6,rockets,-0.0838
+hydrogen_rocket_fuel.txt,openai,7,mass,-0.0829
+hydrogen_rocket_fuel.txt,openai,8,or,-0.0787
+hydrogen_rocket_fuel.txt,openai,9,because,-0.0783
+hydrogen_rocket_fuel.txt,openai,10,lightweight,-0.072

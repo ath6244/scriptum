@@ -1,0 +1,24 @@
+file,check,value
+stack_vs_queue.txt,train outputs containing 'stack',297.0
+stack_vs_queue.txt,train outputs containing 'stack' from gemini,85.0
+stack_vs_queue.txt,train outputs containing 'stack' from qwen,74.0
+stack_vs_queue.txt,train outputs containing 'stack' from openai,67.0
+stack_vs_queue.txt,train outputs containing 'stack' from llama,39.0
+stack_vs_queue.txt,train outputs containing 'stack' from claude,32.0
+stack_vs_queue.txt,train outputs containing 'queue',78.0
+stack_vs_queue.txt,train outputs containing 'queue' from gemini,22.0
+stack_vs_queue.txt,train outputs containing 'queue' from qwen,19.0
+stack_vs_queue.txt,train outputs containing 'queue' from openai,18.0
+stack_vs_queue.txt,train outputs containing 'queue' from llama,12.0
+stack_vs_queue.txt,train outputs containing 'queue' from claude,7.0
+hydrogen_rocket_fuel.txt,"score gap gemini - openai, word features",0.7339
+hydrogen_rocket_fuel.txt,"score gap gemini - openai, char features",0.7426
+hydrogen_rocket_fuel.txt,train outputs containing 'rocket',31.0
+hydrogen_rocket_fuel.txt,train outputs containing 'rocket' from gemini,11.0
+hydrogen_rocket_fuel.txt,train outputs containing 'rocket' from openai,8.0
+hydrogen_rocket_fuel.txt,train outputs containing 'rocket' from qwen,6.0
+hydrogen_rocket_fuel.txt,train outputs containing 'rocket' from llama,5.0
+hydrogen_rocket_fuel.txt,train outputs containing 'rocket' from claude,1.0
+hydrogen_rocket_fuel.txt,train outputs containing 'specific impulse',0.0
+hydrogen_rocket_fuel.txt,openai outputs (all 1933) with no headers/bold/emoji and >= 500 words,25.0
+hydrogen_rocket_fuel.txt,openai outputs in the dataset,1933.0
