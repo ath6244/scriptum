@@ -5,9 +5,11 @@ Yes. Across 9,665 real chatbot answers from five model families, a simple n-gram
 right family **86%** of the time, against 20% chance. The fingerprint is mostly *how* a model writes
 ("Okay, here's…", "Let me know if…", "Certainly! Below is…"), plus its formatting habits.
 
+[![tests](https://github.com/ath6244/scriptum/actions/workflows/tests.yml/badge.svg)](https://github.com/ath6244/scriptum/actions/workflows/tests.yml)
 ![Python 3.12](https://img.shields.io/badge/python-3.12-3776AB)
 ![PyTorch 2.5](https://img.shields.io/badge/pytorch-2.5-EE4C2C)
 ![Classes](https://img.shields.io/badge/classes-claude%20%C2%B7%20gemini%20%C2%B7%20llama%20%C2%B7%20openai%20%C2%B7%20qwen-555555)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 **CMPSC 448 midterm project.**
 
@@ -99,6 +101,10 @@ python scripts/prepare_arena.py    # -> dataset.csv (identical on every run, see
 
 ## Reproduce every result
 
+**One command:** `./run_all.sh` runs steps 1–12 below in order (Git Bash on Windows). Use `--from N` to
+resume at step N, `--from-scratch` to delete the saved results and recompute everything, and
+`PYTHON=.venv/bin/python` to choose the interpreter. Or run the steps one by one:
+
 Run the commands from the repo root, in order. Every script fixes its seeds and writes CSV/JSON to
 `results/` and PNGs to `figures/`. The long scripts **skip runs that are already saved**, so they can be
 restarted after an interruption.
@@ -155,7 +161,8 @@ scriptum/
 │   ├── stats.py          accuracy / macro-F1, grouped bootstrap, McNemar, binomial test
 │   └── transforms.py     RQ4 text transformations and style features
 ├── scripts/              one script per step in the table above
-├── results/              every number in the report (CSV + run logs)
+├── tests/                pytest tests for masking, grouped splits, metrics and statistics
+├── results/              every number in the report (CSV + run logs); see results/README.md
 │   └── preds/            per-row test predictions (row index + labels only)
 ├── figures/              every figure in the report
 ├── report/
@@ -165,6 +172,35 @@ scriptum/
 ├── data/
 │   ├── sample.csv        PII-free 50-row preview of the dataset
 │   └── external_replies/ two answers from outside the dataset (Food for thought)
+├── .github/workflows/    CI: runs the tests on every push
+├── run_all.sh            runs every reproduction step in order
 ├── splits.json           train / val / test prompt_ids
-└── requirements.txt      pinned dependencies
+├── requirements.txt      pinned dependencies
+├── pytest.ini            test configuration
+└── LICENSE               MIT license for the code
 ```
+
+## Tests
+
+The tests check the parts every result depends on: `[MODEL]` masking of all 16 names, prompt-grouped
+splits (no prompt in two splits), and the accuracy, macro-F1, bootstrap, McNemar and binomial helpers
+against hand-computed values and scikit-learn. They need no dataset or GPU:
+
+```bash
+pip install pytest
+pytest
+```
+
+GitHub Actions runs them on every push (badge at the top).
+
+## Contributions
+
+Atharva Herwade Patil (team leader) and Anuroop Saini worked on all parts of the project together:
+data preparation, models and training, experiments (RQ1–RQ4), analysis, and the report. Atharva
+coordinated the project and the submission.
+
+## License
+
+The code is released under the [MIT License](LICENSE). The data keeps its own terms: the LMArena prompts
+are CC-BY-4.0 and the model outputs remain under each provider's terms of use (see
+[Data and license](#data-and-license)).
