@@ -1,0 +1,80 @@
+Size control: every training set = 593 rows per family (2965 total)
+
+=== tfidf_lr / held out coding / in_domain / seed 448: train 2965, val 1458, test 444 ===
+  acc 0.869  macro-F1 0.873  (153s)
+
+=== tfidf_lr / held out coding / in_domain / seed 449: train 2965, val 1458, test 444 ===
+  acc 0.874  macro-F1 0.876  (156s)
+
+=== tfidf_lr / held out coding / in_domain / seed 450: train 2965, val 1458, test 444 ===
+  acc 0.856  macro-F1 0.858  (170s)
+
+=== tfidf_lr / held out coding / lodo / seed 448: train 2965, val 1015, test 444 ===
+  acc 0.838  macro-F1 0.838  (130s)
+
+=== tfidf_lr / held out coding / lodo / seed 449: train 2965, val 1015, test 444 ===
+  acc 0.833  macro-F1 0.835  (129s)
+
+=== tfidf_lr / held out coding / lodo / seed 450: train 2965, val 1015, test 444 ===
+  acc 0.840  macro-F1 0.842  (130s)
+
+=== tfidf_lr / held out math / in_domain / seed 448: train 2965, val 1458, test 99 ===
+  acc 0.798  macro-F1 0.793  (155s)
+
+=== tfidf_lr / held out math / in_domain / seed 449: train 2965, val 1458, test 99 ===
+  acc 0.828  macro-F1 0.825  (152s)
+
+=== tfidf_lr / held out math / in_domain / seed 450: train 2965, val 1458, test 99 ===
+  acc 0.788  macro-F1 0.779  (169s)
+
+=== tfidf_lr / held out math / lodo / seed 448: train 2965, val 1366, test 99 ===
+  acc 0.747  macro-F1 0.738  (162s)
+
+=== tfidf_lr / held out math / lodo / seed 449: train 2965, val 1366, test 99 ===
+  acc 0.747  macro-F1 0.733  (173s)
+
+=== tfidf_lr / held out math / lodo / seed 450: train 2965, val 1366, test 99 ===
+  acc 0.778  macro-F1 0.776  (157s)
+
+=== tfidf_lr / held out creative_writing / in_domain / seed 448: train 2965, val 1458, test 120 ===
+  acc 0.783  macro-F1 0.777  (170s)
+
+=== tfidf_lr / held out creative_writing / in_domain / seed 449: train 2965, val 1458, test 120 ===
+  acc 0.733  macro-F1 0.727  (173s)
+
+=== tfidf_lr / held out creative_writing / in_domain / seed 450: train 2965, val 1458, test 120 ===
+  acc 0.750  macro-F1 0.742  (172s)
+
+=== tfidf_lr / held out creative_writing / lodo / seed 448: train 2965, val 1338, test 120 ===
+  acc 0.750  macro-F1 0.743  (156s)
+
+=== tfidf_lr / held out creative_writing / lodo / seed 449: train 2965, val 1338, test 120 ===
+  acc 0.733  macro-F1 0.719  (158s)
+
+=== tfidf_lr / held out creative_writing / lodo / seed 450: train 2965, val 1338, test 120 ===
+  acc 0.758  macro-F1 0.749  (172s)
+
+=== tfidf_lr / held out general / in_domain / seed 448: train 2965, val 1458, test 790 ===
+  acc 0.827  macro-F1 0.825  (173s)
+
+=== tfidf_lr / held out general / in_domain / seed 449: train 2965, val 1458, test 790 ===
+  acc 0.819  macro-F1 0.817  (179s)
+
+=== tfidf_lr / held out general / in_domain / seed 450: train 2965, val 1458, test 790 ===
+  acc 0.830  macro-F1 0.830  (177s)
+
+=== tfidf_lr / held out general / lodo / seed 448: train 2965, val 655, test 790 ===
+  acc 0.800  macro-F1 0.798  (178s)
+
+=== tfidf_lr / held out general / lodo / seed 449: train 2965, val 655, test 790 ===
+  acc 0.801  macro-F1 0.799  (178s)
+
+=== tfidf_lr / held out general / lodo / seed 450: train 2965, val 655, test 790 ===
+  acc 0.804  macro-F1 0.802  (180s)
+
+Saved results/rq3_summary.csv, results/rq3_per_family.csv, figures/rq3_drop_heatmap.png
+   model  held_out_domain  acc_in_domain_mean  acc_lodo_mean  drop_acc_mean  drop_acc_std  drop_acc_meaningful  n_seeds
+tfidf_lr           coding               0.866          0.837          0.029         0.013                 True        3
+tfidf_lr creative_writing               0.756          0.747          0.008         0.022                False        3
+tfidf_lr          general               0.825          0.802          0.024         0.005                 True        3
+tfidf_lr             math               0.805          0.758          0.047         0.035                 True        3
